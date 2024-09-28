@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHCI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>V</span>Hotel</a>
+        <nav class="navbar">
+             <a href="index.html">home</a>
+             <a href="about.html">About</a>
+             <a href="rooms.html">Rooms</a>
+             <a href="Facilities.html">Facilities</a>
+             <a href="Reservation.html">Reservation</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search here...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+             <h3>login</h3>
+             <input type="email" class="box" placeholder="enter your email">
+             <input type="password" class="box" placeholder="enter your password">
+             <input type="submit" value="login now" class="btn">
+             <input type="checkbox" id="remember">
+             <label for="remember">Remember me</label>
+             <p>forget password? <a href="#">click here</a></p>
+             <p>dont have account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <section class="about top" id="about">
+        <div class="container flex">
+          <div class="left">
+            <img src="aboutimage.jpg" alt="">
+          </div>
+          <div class="right">
+            <div class="text">
+              <h2>About VHotel</h2>
+            </div>
+            <div class="accordionWrapper">
+              <div class="accordionItem open">
+                <h2 class="accordionIHeading">History VHotel</h2>
+                <div class="accordionItemContent">
+                  <p>VHotel was founded in 2005 by entrepreneur Victor Hawthorne, with a vision to create a revolutionary luxury hotel experience. Combining technology, sustainability, and personalized service, VHotel quickly gained recognition for its innovative approach. Each property showcased cutting-edge design, energy-efficient systems, and smart technologies. VHotel's success led to global expansion, inspiring the industry to embrace eco-friendly practices. Today, VHotel is a renowned global brand, synonymous with luxury and sustainability, continuing to push boundaries and set new standards in the hospitality industry.
+                  </p>
+                </div>
+              </div>
+              <div class="accordionItem close">
+                <h2 class="accordionIHeading">Story VHotel</h2>
+                <div class="accordionItemContent">
+                  <p>In the vibrant city of Veritown, visionary entrepreneur Victor set out to create a new benchmark in luxury hospitality. With a passion for sustainability and innovation, he founded VHotel, a haven where opulence and eco-consciousness merged seamlessly. The hotel's architectural marvels showcased green vertical gardens, while each room boasted smart technology for personalized comfort. Word of VHotel's exceptional blend of luxury and sustainability spread far and wide, attracting guests from all corners of the globe. Victor's creation became an inspiration, sparking a global movement towards greener and more responsible tourism. VHotel remains a symbol of innovation and environmental stewardship, captivating the hearts of travelers worldwide.
+                  </p>
+                </div>
+              </div>
+              <div class="accordionItem close">
+                <h2 class="accordionIHeading">VHotel Award</h2>
+                <div class="accordionItemContent">
+                  <p>VHotel has received numerous prestigious awards for its dedication to sustainable luxury. The awards include the Sustainable Luxury Award, Green Hotel of the Year, Best Eco-Friendly Hotel, Innovation in Hospitality, and Luxury Traveler's Choice. These accolades recognize VHotel's commitment to providing the highest quality in luxury hospitality and sustainability.
+                  </p>
+                </div>
+              </div>
+              <div class="accordionItem close">
+                <h2 class="accordionIHeading">VHotel creator</h2>
+                <div class="accordionItemContent">
+                  <p>The creator of VHotel is Victor Hawthorne.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var accItem = document.getElementsByClassName('accordionItem');
+        var accHD = document.getElementsByClassName('accordionIHeading');
+    
+        for (i = 0; i < accHD.length; i++) {
+          accHD[i].addEventListener('click', toggleItem, false);
+        }
+    
+        function toggleItem() {
+          var itemClass = this.parentNode.className;
+          for (var i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordionItem close';
+          }
+          if (itemClass == 'accordionItem close') {
+            this.parentNode.className = 'accordionItem open';
+          }
+        }
+      </script>
+    
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Our Moto</h3>
+            <p>Making all visitor who stay at the VHotel feel a sensation that cannot be found in other Hotels</p>
+        </div>
+        <div class="box">
+            <h3>branch VHotel locations</h3>
+            <a href="#">Indonesia</a>
+            <a href="#">Malaysia</a>
+            <a href="#">Singapore</a>
+            <a href="#">Korea</a>
+            <a href="#">japan</a>
+        </div>
+        <div class="box">
+            <h3>Contact Us</h3>
+            <a href="#">Telp: 0898786756</a>
+            <a href="#">Whatsapp: 0897643262</a>
+            <a href="#">Our Location at Jl putus harapan in Indonesia</a>
+        </div>
+        <div class="box">
+            <h3>follow us in</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">telegram</a>
+        </div>
+    </div>
+    <h1 class="credit"> created by <span>Christian Ernest</span> | Thankyou </h1>
+
+
+
+
+
+
+</section><script src="main.js"></script>
+</body>
+</html>

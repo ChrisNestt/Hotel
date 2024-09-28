@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHCI</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>V</span>Hotel</a>
+        <nav class="navbar">
+             <a href="index.html">home</a>
+             <a href="about.html">About</a>
+             <a href="rooms.html">Rooms</a>
+             <a href="Facilities.html">Facilities</a>
+             <a href="Reservation.html">Reservation</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+             <h3>login</h3>
+             <input type="email" class="box" placeholder="enter your email">
+             <input type="password" class="box" placeholder="enter your password">
+             <input type="submit" value="login now" class="btn">
+             <input type="checkbox" id="remember">
+             <label for="remember">Remember me</label>
+             <p>forget password? <a href="#">click here</a></p>
+             <p>dont have account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    
+    <section class="book" id="book">
+        <h1 class="heading">
+        </h1>
+    
+        <div class="row">
+    
+            <form action="">
+                  <div class="inputBox">
+                      <h3>Input Name</h3>
+                      <input type="text" placeholder="insert name">
+                  </div>
+                  <div class="inputBox">
+                    <h3>input email</h3>
+                    <input type="email" placeholder="insert email">
+                </div>
+                <div class="inputBox">
+                    <h3>Check In date</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Check Out date</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>select room type</h3>
+                    <select id="roomType" name="roomType">
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Executive</option>
+                </select>
+                    <p id="roomTypeError" class="error"></p>
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Our Moto</h3>
+                <p>Making all visitor who stay at the VHotel feel a sensation that cannot be found in other Hotels</p>
+            </div>
+            <div class="box">
+                <h3>branch VHotel locations</h3>
+                <a href="#">Indonesia</a>
+                <a href="#">Malaysia</a>
+                <a href="#">Singapore</a>
+                <a href="#">Korea</a>
+                <a href="#">japan</a>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#">Telp: 0898786756</a>
+                <a href="#">Whatsapp: 0897643262</a>
+                <a href="#">Our Location at Jl putus harapan in Indonesia</a>
+            </div>
+            <div class="box">
+                <h3>follow us in</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">telegram</a>
+            </div>
+        </div>
+        <h1 class="credit"> created by <span>Christian Ernest</span> | Thankyou </h1>
+
+
+
+    </section><script src="main.js"></script>
+</body>
+</html>
